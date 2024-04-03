@@ -11,6 +11,7 @@ npm i -D @tsconfig/recommended
 npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npm i -D serverless-plugin-typescript
 npm i -D serverless-offline
+npm i -D jest ts-jest @types/jest
 ```
 
 ## dev
