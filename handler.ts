@@ -1,14 +1,17 @@
-import { APIGatewayProxyEvent } from "aws-lambda";
+import { APIGatewayProxyEvent, Handler } from "aws-lambda";
 
-module.exports.hello = (event: APIGatewayProxyEvent): Response => {
-  const responce: Response = {
+const hello: Handler<APIGatewayProxyEvent> = async (event): Promise<Response> => {
+  const response: Response = {
     statusCode: 200,
     body: JSON.stringify({
       message: "Go Serverless v1.0! Your function executed successfully!",
       input: event,
     }),
   };
-  return responce;
+  return Promise.resolve(response);
+};
+module.exports = {
+  hello,
 };
 
 type Response = {
