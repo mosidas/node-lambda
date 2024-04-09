@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "./out",  // コンパイルされたファイルの出力先
+  },
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
